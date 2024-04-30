@@ -12,3 +12,24 @@ main{
 footer{
     text-align: center;
 }
+.tick {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    border: 1px solid #ebc;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px; 
+    text-align: center; 
+    line-height: 20px; 
+}
+
+.tick::after {
+    content: ''; 
+}
+
+.tick.checked::after {
+    content: '\2713'; 
+    color: #eb6864; 
+}

@@ -12,3 +12,13 @@ let dropdowns = document.querySelectorAll('.dropdown-toggle');
             });
         });
         
+        document.addEventListener('DOMContentLoaded', function() {
+            const ticks = document.querySelectorAll('.tick');
+            
+            ticks.forEach(function(tick) {
+                tick.addEventListener('click', function() {
+                    tick.classList.toggle('checked');
+                });
+            });
+        });
+        
